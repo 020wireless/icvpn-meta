@@ -1,0 +1,22 @@
+  # This is your ASN.
+  asn: 65205
+
+  # A list of people to contact in case of technical emergency.
+  # Automated monitoring systems might use this.
+  tech-c:
+    - wireless-amsterdam@lists.puscii.nl
+  
+  # Prefixes announced by your AS. This may be used for filtering
+  # routes. Keep the prefixes a short as possible. If you're
+  # assigned 10.130.0.0/16 while you're using just a subnet of it
+  # (e.g. 10.130.0.0/20) you must include 10.130.0.0/16 here. The details
+  # will be taken care of by the routing daemons.
+  networks:
+    ipv4:
+      - 10.205.0.0/16
+
+  # A list of BGP peers in IC-VPN announcing your AS.
+  bgp:
+    amsterdam1:
+      ipv4: 10.207.0.205
+
